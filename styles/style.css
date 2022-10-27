@@ -499,8 +499,8 @@
         margin-right: auto;
         margin-left: 3.54609929%;
         align-self: flex-end;
-        max-width: 18px;
         min-height: 18px;
+        min-width: 18p;
     }
 
     .profile-info__link {
