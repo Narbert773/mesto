@@ -1,0 +1,12 @@
+.popup__line {
+    border: 1px solid black;
+    background-color: black;
+    opacity: 20%;
+    margin: 13px 8.37209302% 0;
+}
+
+@media screen and (max-width: 434px) {
+    .popup__line {
+        margin: 13px 9.24369748% 0
+    }
+}

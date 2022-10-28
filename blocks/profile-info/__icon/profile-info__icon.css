@@ -1,0 +1,12 @@
+.profile-info__icon {
+    margin: auto;
+}
+
+@media screen and (max-width: 434px) {
+    .profile-info__icon {
+        width: 7.5px;
+        height: 7.5px;
+        align-self: center;
+        margin: auto;
+    }
+}

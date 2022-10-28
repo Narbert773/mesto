@@ -1,0 +1,17 @@
+.profile__photo {
+    max-width: 13.63664636%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile__photo {
+        max-width: 20%;
+        margin: 0 auto 0;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .profile__photo {
+        max-width: 37.5%;
+    }
+}

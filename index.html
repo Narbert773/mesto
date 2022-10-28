@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Место</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./pages/index.css">
 </head>
 
@@ -18,16 +17,16 @@
         </header>
         <main class="main">
             <section class="profile">
-                <img src="./images/Cousteau.jpg" class="avatar" alt="Кусто">
+                <img src="./images/Cousteau.jpg" class="profile__photo" alt="Кусто">
                 <div class="profile-info">
                     <h1 class="profile-info__title">Жак-Ив Кусто</h1>
                     <button class="profile-info__edit-button"><a href='#' id='popup__open'
                             class="profile-info__link"><img src="./images/Vector.svg" alt="Курсор"
-                                class="profile-info__edit-button-image"></a></button>
+                                class="profile-info__icon"></a></button>
                     <p class="profile-info__subtitle">Исследователь океана</p>
                 </div>
-                <button class="profile-info__add-button"><img src="./images/Cross.svg" alt="Крест"
-                        class="profile-info__add-button-image"></button>
+                <button class="profile__add-button"><img src="./images/Cross.svg" alt="Крест"
+                        class="profile__icon"></button>
             </section>
             <section class="elements">
                 <div class="element">
@@ -86,7 +85,7 @@
                         <button class="popup__save" id="popup__save">Сохранить</button>
                     </form>
                     <div class="popup__close" id="popup__close"> <img src="./images/Close Icon.svg"
-                            alt="Закрывающая иконка" class="popup__close-image"></div>
+                            alt="Закрывающая иконка" class="popup__icon"></div>
                 </div>
             </div>
         </div>
@@ -94,7 +93,7 @@
             <p class="footer__copyright">© 2022 Mesto Russia</p>
         </footer>
     </div>
-    <script src="./script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

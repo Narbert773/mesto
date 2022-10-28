@@ -1,0 +1,27 @@
+.profile-info__subtitle {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 4.7%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .profile-info__subtitle {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 434px) {
+    .profile-info__subtitle {
+        font-size: 14px;
+        line-height: 16.94px;
+        margin-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
