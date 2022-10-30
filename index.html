@@ -20,9 +20,8 @@
                 <img src="./images/Cousteau.jpg" class="profile__photo" alt="Кусто">
                 <div class="profile-info">
                     <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-                    <button class="profile-info__edit-button"><a href='#' id='popup__open'
-                            class="profile-info__link"><img src="./images/Vector.svg" alt="Курсор"
-                                class="profile-info__icon"></a></button>
+                    <button class="profile-info__edit-button"><a href='#' class="profile-info__link"><img
+                                src="./images/Vector.svg" alt="Курсор" class="profile-info__icon"></a></button>
                     <p class="profile-info__subtitle">Исследователь океана</p>
                 </div>
                 <button class="profile__add-button"><img src="./images/Cross.svg" alt="Крест"
@@ -73,19 +72,19 @@
                 </div>
             </section>
         </main>
-        <div class="popup" id="popup">
+        <div class="popup">
             <div class="popup__container">
                 <div class="popup__body" id="popup__body">
                     <p class="popup__text">Редактировать профиль</p>
                     <form class="popup__form" action="">
-                        <input class="popup__input" type="text" placeholder="Имя">
+                        <input class="popup__input popup__input_name" type="text" placeholder="Имя">
                         <hr class="popup__line">
-                        <input class="popup__input" type="text" placeholder="О себе">
+                        <input class="popup__input popup__input_job" type="text" placeholder="О себе">
                         <hr class="popup__line">
-                        <button class="popup__save" id="popup__save">Сохранить</button>
+                        <button class="popup__save">Сохранить</button>
                     </form>
-                    <div class="popup__close" id="popup__close"> <img src="./images/Close Icon.svg"
-                            alt="Закрывающая иконка" class="popup__icon"></div>
+                    <div class="popup__close"><img src="./images/Close Icon.svg" alt="Закрывающая иконка"
+                            class="popup__icon"></div>
                 </div>
             </div>
         </div>
