@@ -6,7 +6,8 @@
     margin-right: 0;
     margin-left: auto;
     align-self: flex-end;
-    position: relative;
+    cursor: pointer;
+    display: flex;
 }
 
 .profile-info__edit-button:hover {
