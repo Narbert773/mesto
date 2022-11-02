@@ -1,24 +1,12 @@
 .element {
     width: 32.0454545%;
-    height: 48.5215054%;
+    max-height: 48.5215054%;
     box-sizing: border-box;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     margin-bottom: 20px;
-}
-
-.element:nth-of-type(4) {
-    margin-bottom: 0;
-}
-
-.element:nth-of-type(5) {
-    margin-bottom: 0;
-}
-
-.element:nth-of-type(6) {
-    margin-bottom: 0;
 }
 
 @media screen and (max-width: 950px) {
@@ -32,14 +20,8 @@
         width: 75%;
         align-self: center;
         margin-bottom: 10px;
-    }
-
-    .element:nth-of-type(4) {
-        margin-bottom: 10px;
-    }
-
-    .element:nth-of-type(5) {
-        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -47,14 +29,6 @@
 @media screen and (max-width: 434px) {
     .element {
         width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .element:nth-of-type(4) {
-        margin-bottom: 20px;
-    }
-
-    .element:nth-of-type(5) {
         margin-bottom: 20px;
     }
 }

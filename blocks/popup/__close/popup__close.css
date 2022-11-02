@@ -3,6 +3,8 @@
     right: -40px;
     top: -40px;
     cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .popup__close:hover {

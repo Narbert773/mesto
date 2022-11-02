@@ -7,6 +7,10 @@
     width: fit-content;
     margin-top: 4.7%;
     margin-bottom: 0;
+    text-overflow: ellipsis;
+    max-width: 336px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,7 +24,6 @@
     .profile-info__subtitle {
         font-size: 14px;
         line-height: 16.94px;
-        margin-bottom: 0;
         width: 100%;
         text-align: center;
     }

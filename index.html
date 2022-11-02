@@ -13,18 +13,17 @@
     <div class="page">
         <header class="header">
             <div class="header__logo"></div>
-            <hr class="header__line">
         </header>
         <main class="main">
             <section class="profile">
                 <img src="./images/Cousteau.jpg" class="profile__photo" alt="Кусто">
                 <div class="profile-info">
                     <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-                    <button class="profile-info__edit-button"><img src="./images/Vector.svg" alt="Курсор"
+                    <button class="profile-info__edit-button" type="button"><img src="./images/Vector.svg" alt="Курсор"
                             class="profile-info__icon"></button>
                     <p class="profile-info__subtitle">Исследователь океана</p>
                 </div>
-                <button class="profile__add-button"><img src="./images/Cross.svg" alt="Крест"
+                <button class="profile__add-button" type="button"><img src="./images/Cross.svg" alt="Крест"
                         class="profile__icon"></button>
             </section>
             <section class="elements">
@@ -32,59 +31,57 @@
                     <img src="./images/Karachaevsk.jpg" class="element__image" alt="Карачаевск">
                     <div class="element__group">
                         <h2 class="element__title">Карачаевск</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/Elbrus.jpg" class="element__image" alt="Эльбрус">
                     <div class="element__group">
                         <h2 class="element__title">Гора Эльбрус</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/Dombai.jpg" class="element__image" alt="Домбай">
                     <div class="element__group">
                         <h2 class="element__title">Домбай</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/Elbrus.jpg" class="element__image" alt="Эльбрус">
                     <div class="element__group">
                         <h2 class="element__title">Гора Эльбрус</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/Dombai.jpg" class="element__image" alt="Домбай">
                     <div class="element__group">
                         <h2 class="element__title">Домбай</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
                 <div class="element">
                     <img src="./images/Cherkessia.jpg" class="element__image" alt="Карачаево-Черкесия">
                     <div class="element__group">
                         <h2 class="element__title">Карачаево-Черкесия</h2>
-                        <img src='./images/heart.svg' class="element__icon" alt="Лайк">
+                        <button class="element__like-button" type="button"></button>
                     </div>
                 </div>
             </section>
         </main>
         <div class="popup">
             <div class="popup__container">
-                <div class="popup__body" id="popup__body">
-                    <p class="popup__text">Редактировать профиль</p>
-                    <form class="popup__form">
-                        <input class="popup__input popup__input_name" type="text" placeholder="Имя">
-                        <hr class="popup__line">
-                        <input class="popup__input popup__input_job" type="text" placeholder="О себе">
-                        <hr class="popup__line">
-                        <button class="popup__save">Сохранить</button>
+                <div class="popup__body">
+                    <h2 class="popup__text">Редактировать профиль</h2>
+                    <form class="popup__form" name="editForm">
+                        <input class="popup__input popup__input_value_name" type="text" placeholder="Имя" name="name">
+                        <input class="popup__input popup__input_value_job" type="text" placeholder="О себе" name="job">
+                        <button class="popup__save" type="submit">Сохранить</button>
                     </form>
-                    <div class="popup__close"><img src="./images/Close-Icon.svg" alt="Закрывающая иконка"
-                            class="popup__icon"></div>
+                    <button class="popup__close" type="button"><img src="./images/Close-Icon.svg"
+                            alt="Закрывающая иконка" class="popup__icon"></button>
                 </div>
             </div>
         </div>
@@ -92,7 +89,7 @@
             <p class="footer__copyright">© 2022 Mesto Russia</p>
         </footer>
     </div>
-    <script src="./scripts/script.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     min-height: 50px;
     cursor: pointer;
     margin: 48px 8.37209302% 37px;
+    border: none;
 }
 
 .popup__save:hover {
