@@ -1,6 +1,5 @@
 .element {
     width: 32.0454545%;
-    max-height: 48.5215054%;
     box-sizing: border-box;
     background-color: #FFFFFF;
     display: flex;
@@ -23,8 +22,11 @@
         margin-left: auto;
         margin-right: auto;
     }
-}
 
+    .element:last-of-type {
+        margin-bottom: 0;
+    }
+}
 
 @media screen and (max-width: 434px) {
     .element {

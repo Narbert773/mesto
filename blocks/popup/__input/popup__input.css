@@ -5,7 +5,7 @@
     font-weight: 400;
     line-height: 16.94px;
     margin: 54px 8.37209302% 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
     padding-bottom: 13px;
 }
 
@@ -19,6 +19,6 @@
 
 @media screen and (max-width: 434px) {
     .popup__input {
-        margin: 54px 9.24369748% 0;
+        margin: 75px 9.24369748% 0;
     }
 }
