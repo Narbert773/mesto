@@ -2,7 +2,7 @@
     background-image: url(../../../images/heart.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: auto;
+    margin: auto 0 auto 3%;
     background-color: #FFFFFF;
     align-self: center;
     cursor: pointer;
