@@ -11,8 +11,8 @@ const AddingPopupClose = document.querySelector('.popup-adding__close');
 const addingPopup = document.querySelector('.popup-adding');
 const CardsContainer = document.querySelector('.elements');
 const AddingformElement = document.querySelector('.popup-adding__form');
-const placeInput = AddingformElement.querySelector('.popup__input_value_place');
-const linkInput = AddingformElement.querySelector('.popup__input_value_link');
+const placeInput = AddingformElement.querySelector('.popup-adding__input_value_place');
+const linkInput = AddingformElement.querySelector('.popup-adding__input_value_link');
 
 const initialCards = [
     {
