@@ -27,7 +27,17 @@
                         class="profile__icon"></button>
             </section>
             <section class="elements">
-                <div class="element">
+                <template id="card-template">
+                    <div class="element">
+                        <button class="element__trash-button" type="button"></button>
+                        <img src="" class="element__image">
+                        <div class="element__group">
+                            <h2 class="element__title"></h2>
+                            <button class="element__like-button" type="button"></button>
+                        </div>
+                    </div>
+                </template>
+                <!--<div class="element">
                     <img src="./images/Karachaevsk.jpg" class="element__image" alt="Карачаевск">
                     <div class="element__group">
                         <h2 class="element__title">Карачаевск</h2>
@@ -68,7 +78,7 @@
                         <h2 class="element__title">Карачаево-Черкесия</h2>
                         <button class="element__like-button" type="button"></button>
                     </div>
-                </div>
+                </div>-->
             </section>
         </main>
         <div class="popup">
@@ -81,6 +91,27 @@
                 </form>
                 <button class="popup__close" type="button"><img src="./images/Close-Icon.svg" alt="Закрывающая иконка"
                         class="popup__icon"></button>
+            </div>
+        </div>
+        <div class="popup-adding">
+            <div class="popup__container">
+                <h2 class="popup__text">Новое место</h2>
+                <form class="popup-adding__form" name="addForm">
+                    <input class="popup__input popup__input_value_place" type="text" placeholder="Название" name="name">
+                    <input class="popup__input popup__input_value_link" type="text" placeholder="Ссылка на картинку"
+                        name="link">
+                    <button class="popup-adding__save" type="submit">Сохранить</button>
+                </form>
+                <button class="popup-adding__close" type="button"><img src="./images/Close-Icon.svg"
+                        alt="Закрывающая иконка" class="popup__icon"></button>
+            </div>
+        </div>
+        <div class="popup-image">
+            <div class="popup-image__container">
+                <img src="" class="popup-image__large-photo">
+                <h3 class="popup-image__title"></h3>
+                <button class="popup-image__close" type="button"><img src="./images/Close-Icon.svg"
+                        alt="Закрывающая иконка" class="popup__icon"></button>
             </div>
         </div>
         <footer class="footer">
