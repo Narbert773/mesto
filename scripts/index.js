@@ -1,3 +1,4 @@
+const popup = document.querySelector('.popup');
 const editPopupOpen = document.querySelector('.profile-info__edit-button');
 const popupClose = document.querySelectorAll('.popup__close');
 const editPopup = document.querySelector('.popup_edit-profile');
@@ -40,7 +41,7 @@ const generateCard = (dataCard) => {
     function openPopupLarge() {
         arrayImg.forEach((element, index) => {
             element.addEventListener('click', (e) => {
-                imgPopup.classList.add('popup_opened');
+                openPopup(imgPopup);
                 imgPopupTitle.textContent = arrayTitle[index].textContent;
                 increasedImg(e);
             });
@@ -70,24 +71,32 @@ initialCards.forEach((dataCard) => {
     renderInitialCards(dataCard);
 });
 
+function openPopup(popup) {
+    popup.classList.add('popup_opened');
+};
+
 addingPopupOpen.addEventListener('click', function (e) {
     e.preventDefault();
-    addingPopup.classList.add('popup_opened');
+    openPopup(addingPopup);
 });
 
 editPopupOpen.addEventListener('click', function (e) {
     e.preventDefault();
-    editPopup.classList.add('popup_opened');
+    openPopup(editPopup);
     nameInput.value = nameValue.textContent;
     jobInput.value = jobValue.textContent;
 });
 
+function closePopup(popup) {
+    popup.classList.remove('popup_opened');
+};
+
 popupClose.forEach((popup) => {
     popup.addEventListener('click', (e) => {
         e.preventDefault();
-        editPopup.classList.remove('popup_opened');
-        addingPopup.classList.remove('popup_opened');
-        imgPopup.classList.remove('popup_opened');
+        closePopup(editPopup);
+        closePopup(addingPopup);
+        closePopup(imgPopup);
     });
 });
 
