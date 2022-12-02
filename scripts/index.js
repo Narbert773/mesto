@@ -103,7 +103,7 @@ function submitEditProfileForm(e) {
     e.preventDefault();
     nameValue.textContent = nameInput.value;
     jobValue.textContent = jobInput.value;
-    editPopup.classList.remove('popup_opened');
+    closePopup(editPopup);
 }
 
 formElement.addEventListener('submit', submitEditProfileForm);
@@ -116,7 +116,7 @@ function submitAddingForm(e) {
     };
     renderInitialCards(newCard);
     addingformElement.reset();
-    addingPopup.classList.remove('popup_opened');
+    closePopup(addingPopup);
 }
 
 addingformElement.addEventListener('submit', submitAddingForm);
