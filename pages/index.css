@@ -30,34 +30,6 @@
 @import url(../blocks/element/__like-button/_active/element__like-button_active.css);
 @import url(../blocks/element/__trash-button/element__trash-button.css);
 
-/* @import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/popup/__container/popup__container.css);
-@import url(../blocks/popup/__text/popup__text.css);
-@import url(../blocks/popup/__form/popup__form.css);
-@import url(../blocks/popup/__input/popup__input.css);
-@import url(../blocks/popup/__save/popup__save.css);
-@import url(../blocks/popup/__close/popup__close.css);
-@import url(../blocks/popup/__icon/popup__icon.css);
-
-@import url(../blocks/popup-adding/popup-adding.css);
-@import url(../blocks/popup-adding/__container/pop-adding__container.css);
-@import url(../blocks/popup-adding/__text/popup-adding__text.css);
-@import url(../blocks/popup-adding/__input/popup-adding__input.css);
-@import url(../blocks/popup-adding/__icon/popup-adding__icon.css);
-@import url(../blocks/popup-adding/__save/popup-adding__save.css);
-@import url(../blocks/popup-adding/_opened/popup-adding_opened.css);
-@import url(../blocks/popup-adding/__close/popup-adding__close.css);
-@import url(../blocks/popup-adding/__form/popup-adding__form.css);
-
-@import url(../blocks/popup-image/popup-image.css);
-@import url(../blocks/popup-image/__container/popup-image__container.css);
-@import url(../blocks/popup-image/__close/popup-image__close.css);
-@import url(../blocks/popup-image/_opened/popup-image_opened.css);
-@import url(../blocks/popup-image/__title/popup-image__title.css);
-@import url(../blocks/popup-image/__icon/popup-image__icon.css);
-@import url(../blocks/popup-image/__large-photo/popup-image__large-photo.css); */
-
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
@@ -72,4 +44,4 @@
 @import url(../blocks/popup/_opened/popup_opened.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__large-photo/popup__large-photo.css);
-@import url(../blocks/popup/__container/_large-image/popup__container_large-image.css);
+@import url(../blocks/popup/__photo-container/popup__photo-container.css);
