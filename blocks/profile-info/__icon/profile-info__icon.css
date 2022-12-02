@@ -2,7 +2,7 @@
     margin: auto;
 }
 
-@media screen and (max-width: 474px) {
+@media screen and (max-width: 515px) {
     .profile-info__icon {
         width: 7.5px;
         height: 7.5px;

@@ -1,4 +1,4 @@
-.popup-image__large-photo {
+.popup__large-photo {
     max-width: 75vw;
     max-height: 75vh;
     object-fit: cover;

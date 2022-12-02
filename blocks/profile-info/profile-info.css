@@ -13,7 +13,7 @@
     }
 }
 
-@media screen and (max-width: 474px) {
+@media screen and (max-width: 515px) {
     .profile-info {
         max-width: calc(100% - (5.9375% + 5.9375%));
         margin: 22.25px auto 0;

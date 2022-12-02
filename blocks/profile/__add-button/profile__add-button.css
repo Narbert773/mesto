@@ -13,7 +13,7 @@
     transition: opacity 1s ease;
 }
 
-@media screen and (max-width: 474px) {
+@media screen and (max-width: 515px) {
     .profile__add-button {
         width: 100%;
         margin: 36px auto 0;

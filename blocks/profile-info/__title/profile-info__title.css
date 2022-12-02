@@ -6,7 +6,8 @@
     margin-top: 0;
     margin-bottom: 0;
     text-overflow: ellipsis;
-    max-width: 294px;
+    max-width: 87.5%;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -33,7 +34,7 @@
     }
 }
 
-@media screen and (max-width: 474px) {
+@media screen and (max-width: 515px) {
     .profile-info__title {
         font-size: 27px;
         line-height: 32.68px;
