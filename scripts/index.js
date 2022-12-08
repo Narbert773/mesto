@@ -36,16 +36,10 @@ const generateCard = (dataCard) => {
     const link = newCard.querySelector('.element__image');
     link.src = dataCard.link;
 
-    function setEventListenerForOpenLargePopup() {
-        link.addEventListener('click', () => {
-            openPopup(imgPopup);
-            imgPopupTitle.textContent = title.textContent;
-            imgPopupLarge.src = link.closest('.element__image').src;
-        });
-    };
-
     link.addEventListener('click', () => {
-        setEventListenerForOpenLargePopup();
+        openPopup(imgPopup);
+        imgPopupTitle.textContent = title.textContent;
+        imgPopupLarge.src = link.closest('.element__image').src;
     });
 
     const trashBtn = newCard.querySelector('.element__trash-button');
