@@ -80,7 +80,6 @@ function closePopup(popup) {
 };
 
 buttonsClosePopup.forEach((button) => {
-    console.log(button);
     const popup = button.parentElement.parentElement;
     button.addEventListener('click', (e) => {
         e.preventDefault();
