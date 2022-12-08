@@ -35,11 +35,13 @@ const generateCard = (dataCard) => {
     title.textContent = dataCard.name;
     const link = newCard.querySelector('.element__image');
     link.src = dataCard.link;
+    link.alt = title.textContent;
 
     link.addEventListener('click', () => {
         openPopup(imgPopup);
         imgPopupTitle.textContent = title.textContent;
-        imgPopupLarge.src = link.closest('.element__image').src;
+        imgPopupLarge.src = dataCard.link;
+        link.alt = title.textContent;
     });
 
     const trashBtn = newCard.querySelector('.element__trash-button');
