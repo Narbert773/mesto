@@ -1,6 +1,5 @@
 .element__like-button {
     background-image: url(../../../images/heart.svg);
-    background-size: cover;
     background-repeat: no-repeat;
     margin: auto 0 auto 3%;
     background-color: #FFFFFF;

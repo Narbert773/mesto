@@ -15,6 +15,9 @@ const imgPopupLarge = document.querySelector('.popup__large-photo');
 const formAddCard = document.querySelector('.popup__form_adding-card');
 const placeInput = formAddCard.querySelector('.popup__input_value_place');
 const linkInput = formAddCard.querySelector('.popup__input_value_link');
+const overlay = document.querySelectorAll('.popup');
+const popupContainer = document.querySelectorAll('.popup__container');
+const popupContainerLargePhoto = document.querySelector('.popup__photo-container');
 
 const cardTemplate = document.querySelector('#card-template').content.querySelector('.element');
 
@@ -108,3 +111,22 @@ function submitAddingForm(e) {
 }
 
 formAddCard.addEventListener('submit', submitAddingForm);
+
+overlay.forEach((element) => {
+    const popUp = element;
+    element.addEventListener('click', (e) => {
+        const withinBoundariesEdit = e.composedPath().includes(popupContainer[0]);
+        const withinBoundariesAdding = e.composedPath().includes(popupContainer[1]);
+        const withinBoundariesLargePhoto = e.composedPath().includes(popupContainerLargePhoto);
+        if (!withinBoundariesEdit && !withinBoundariesAdding && !withinBoundariesLargePhoto) {
+            closePopup(popUp);
+        }
+    });
+
+    element.addEventListener('keydown', function (e) {
+        if (e.keyCode === 27) {
+            closePopup(popUp);
+        }
+    });
+
+});
