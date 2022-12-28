@@ -123,7 +123,7 @@ overlay.forEach((element) => {
         }
     });
 
-    element.addEventListener('keydown', function (e) {
+    document.addEventListener('keydown', function (e) {
         if (e.keyCode === 27) {
             closePopup(popUp);
         }
