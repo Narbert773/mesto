@@ -3,7 +3,7 @@ const buttonOpenEditProfileForm = document.querySelector('.profile-info__edit-bu
 const popupEditProfile = document.querySelector('.popup_edit-profile');
 const nameValue = document.querySelector('.profile-info__title');
 const jobValue = document.querySelector('.profile-info__subtitle');
-const formEditProfile = document.querySelector('.popup__form');
+const formEditProfile = document.querySelector('.popup__form_edit-profile');
 const nameInput = formEditProfile.querySelector('.popup__input_value_name');
 const jobInput = formEditProfile.querySelector('.popup__input_value_job');
 const buttonOpenAddCardForm = document.querySelector('.profile__add-button');
@@ -18,6 +18,8 @@ const linkInput = formAddCard.querySelector('.popup__input_value_link');
 const overlay = document.querySelectorAll('.popup');
 const popupContainer = document.querySelectorAll('.popup__container');
 const popupContainerLargePhoto = document.querySelector('.popup__photo-container');
+const formElement = document.querySelector('.popup__form');
+const formInput = formElement.querySelector('.popup__input');
 
 const cardTemplate = document.querySelector('#card-template').content.querySelector('.element');
 
@@ -71,11 +73,13 @@ buttonOpenAddCardForm.addEventListener('click', function (e) {
     openPopup(popupAddCard);
 });
 
+
 buttonOpenEditProfileForm.addEventListener('click', function (e) {
     e.preventDefault();
     openPopup(popupEditProfile);
     nameInput.value = nameValue.textContent;
     jobInput.value = jobValue.textContent;
+    enableValidation(validationConfig);
 });
 
 function closePopup(popup) {
@@ -87,6 +91,7 @@ buttonsClosePopup.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault();
         closePopup(popup);
+        formAddCard.reset();
     });
 });
 
@@ -120,13 +125,26 @@ overlay.forEach((element) => {
         const withinBoundariesLargePhoto = e.composedPath().includes(popupContainerLargePhoto);
         if (!withinBoundariesEdit && !withinBoundariesAdding && !withinBoundariesLargePhoto) {
             closePopup(popUp);
+            formAddCard.reset();
         }
     });
 
     document.addEventListener('keydown', function (e) {
         if (e.keyCode === 27) {
             closePopup(popUp);
+            formAddCard.reset();
         }
     });
 
 });
+
+validationConfig = {
+    formSelector: '.popup__form',
+    inputSelector: '.popup__input',
+    submitButtonSelector: '.popup__save',
+    inactiveButtonClass: 'popup__save_disabled',
+    inputErrorClass: 'popup__input_type_error',
+    errorClass: 'popup__error_visible'
+};
+
+enableValidation(validationConfig);
