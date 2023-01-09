@@ -71,6 +71,7 @@ function openPopup(popup) {
 buttonOpenAddCardForm.addEventListener('click', function (e) {
     e.preventDefault();
     openPopup(popupAddCard);
+    resetFormError(formAddCard, validationConfig);
 });
 
 
@@ -79,6 +80,7 @@ buttonOpenEditProfileForm.addEventListener('click', function (e) {
     openPopup(popupEditProfile);
     nameInput.value = nameValue.textContent;
     jobInput.value = jobValue.textContent;
+    resetFormError(formEditProfile, validationConfig);
     enableValidation(validationConfig);
 });
 
