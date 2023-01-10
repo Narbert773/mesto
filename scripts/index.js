@@ -107,9 +107,9 @@ function handleEscClose(e) {
     }
 }
 
-function handleOverlayClick(evt) {
-    const popup = evt.currentTarget;
-    if (popup === evt.target) {
+function handleOverlayClick(e) {
+    const popup = e.currentTarget;
+    if (popup === e.target) {
         closePopup(popup);
     }
 }
