@@ -72,10 +72,14 @@ const renderInitialCards = (dataCard) => {
 
 function openPopup(popup) {
     popup.classList.add('popup_opened');
+    document.addEventListener('keydown', handleEscClose);
+    popup.addEventListener('click', handleOverlayClick);
 };
 
 function closePopup(popup) {
     popup.classList.remove('popup_opened');
+    document.removeEventListener('keydown', handleEscClose);
+    popup.removeEventListener('click', handleOverlayClick);
 };
 
 function submitEditProfileForm(e) {
@@ -94,6 +98,20 @@ function submitAddingForm(e) {
     renderInitialCards(newCard);
     formAddCard.reset();
     closePopup(popupAddCard);
+}
+
+function handleEscClose(e) {
+    if (e.keyCode === KEY_ESC) {
+        const popup = document.querySelector('.popup_opened');
+        closePopup(popup);
+    }
+}
+
+function handleOverlayClick(evt) {
+    const popup = evt.currentTarget;
+    if (popup === evt.target) {
+        closePopup(popup);
+    }
 }
 
 // Обработчики и методы
@@ -130,27 +148,5 @@ buttonsClosePopup.forEach((button) => {
 formEditProfile.addEventListener('submit', submitEditProfileForm);
 
 formAddCard.addEventListener('submit', submitAddingForm);
-
-overlay.forEach((element) => {
-    const popUp = element;
-    element.addEventListener('click', (e) => {
-        const withinBoundariesEdit = e.composedPath().includes(popupContainer[0]);
-        const withinBoundariesAdding = e.composedPath().includes(popupContainer[1]);
-        const withinBoundariesLargePhoto = e.composedPath().includes(popupContainerLargePhoto);
-        if (!withinBoundariesEdit && !withinBoundariesAdding && !withinBoundariesLargePhoto) {
-            closePopup(popUp);
-            formAddCard.reset();
-        } else if (e.target.classList.contains('popup') || e.target.classList.contains('popup__close')) {
-            closePopup(popUp);
-        };
-    });
-
-    document.addEventListener('keydown', function (e) {
-        if (e.keyCode === KEY_ESC) {
-            closePopup(popUp);
-        }
-    });
-
-});
 
 enableValidation(validationConfig);
