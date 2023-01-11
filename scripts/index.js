@@ -133,7 +133,6 @@ buttonOpenEditProfileForm.addEventListener('click', function (e) {
     nameInput.value = nameValue.textContent;
     jobInput.value = jobValue.textContent;
     resetFormError(formEditProfile, validationConfig);
-    enableValidation(validationConfig);
 });
 
 buttonsClosePopup.forEach((button) => {
